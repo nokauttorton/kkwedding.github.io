@@ -1,0 +1,120 @@
+body {
+    @extend .scroll-box;
+    margin: 0;
+}
+
+.scroll-box {
+    overflow-y: auto;
+    scrollbar-width: thin;
+  
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: none;
+      background-color: transparent;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: none;
+      background-color: rgba(94, 94, 94, 0.25);
+      cursor: grab;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-content: center;
+}
+
+@for $i from 0 through 12 {
+    .mt-#{$i} {
+        margin-top: calc(4px * #{$i}) !important;
+    }
+    
+    .mr-#{$i} {
+        margin-right: calc(4px * #{$i}) !important;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: calc(4px * #{$i}) !important;
+    }
+
+    .ml-#{$i} {
+        margin-left: calc(4px * #{$i}) !important;
+    }
+
+    .ma-#{$i} {
+        margin: calc(4px * #{$i}) !important;
+    }
+
+    .mrl-#{$i} {
+        margin: auto calc(4px * #{$i}) !important;
+    }
+
+    .mtb-#{$i} {
+        margin: calc(4px * #{$i}) auto !important;
+    }
+    .pt-#{$i} {
+        padding-top: calc(4px * #{$i}) !important;
+    }
+
+    .pr-#{$i} {
+        padding-right: calc(4px * #{$i}) !important;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: calc(4px * #{$i}) !important;
+    }
+
+    .pl-#{$i} {
+        padding-left: calc(4px * #{$i}) !important;
+    }
+
+    .pa-#{$i} {
+        padding: calc(4px * #{$i}) !important;
+    }
+
+    .prl-#{$i} {
+        padding: 0 calc(4px * #{$i}) !important;
+    }
+
+    .ptb-#{$i} {
+        padding: calc(4px * #{$i}) 0 !important;
+    }
+}
+
+@media (min-width: 320px) { //mobile
+    .x {
+        font-size: x-large;
+    }
+}
+
+@media (min-width: 768px) { //tablet
+    .x {
+        font-size: medium;
+    }
+}
+
+@media (min-width: 1024px) { //laptop
+    .x {
+        font-size: small;
+    }
+}
