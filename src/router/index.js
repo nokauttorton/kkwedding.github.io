@@ -6,7 +6,11 @@ Vue.use(Router);
 
 const ROUTES = [
     {
-        path: '/',
+        path: '*',
+        redirect: 'home'
+    },
+    {
+        path: '/home',
         name: 'home',
         component: Home,
     },
@@ -23,7 +27,7 @@ const router = new Router({
 });
 
 router.beforeEach((to, from, next) => {
-
+    next();
 });
 
 export default router

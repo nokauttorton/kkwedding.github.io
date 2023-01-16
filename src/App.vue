@@ -8,13 +8,13 @@
 
     export default {
         name: 'App',
-        data() {
-            return {
-                timeout: false,
-                delta: 200,
-                rtime: 0
-            }
-        },
+        // data() {
+        //     return {
+        //         timeout: false,
+        //         delta: 200,
+        //         rtime: 0
+        //     }
+        // },
         methods: {
             // onResize() {
             //     this.rtime = new Date();
