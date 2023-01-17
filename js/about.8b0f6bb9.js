@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkkkwedding_github_io"]=self["webpackChunkkkwedding_github_io"]||[]).push([[443],{168:function(n,t,u){u.r(t),u.d(t,{default:function(){return r}});var i=function(){var n=this;n._self._c;return n._m(0)},e=[function(){var n=this,t=n._self._c;return t("div",{staticClass:"about"},[t("h1",[n._v("This is an about page")])])}],s=u(1),a={},l=(0,s.Z)(a,i,e,!1,null,null,null),r=l.exports}}]);
+//# sourceMappingURL=about.8b0f6bb9.js.map
